@@ -59,7 +59,7 @@ if __name__ == '__main__':
     with md_pose.Pose(
         min_detection_confidence=0.6,
         min_tracking_confidence=0.6) as pose:
-        app.run(debug=True)
+        app.run(debug=True,port=5000,host="0.0.0.0")
 
 cap.release()
 cv2.destroyAllWindows()
